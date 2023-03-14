@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find a Freelancer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/44f50e4aac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="hire.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <script src="hire.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="fullpage">
+        <div class="logo"> <P>Wasetak-Free</P></div>
+        <div class="title">
+            <h1>Tell us what you need done</h1>
+            <h3>Contact skilled freelancers within minutes. View profiles, ratings, portfolios and chat with them. Pay
+                the freelancer only when you are 100% satisfied with their work</h3>
+        </div>
+        <div class="form">
+            <form id="regForm" action="">
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+                    <h3 class="h3">Choose a name for your project</h3>
+                    <p><input placeholder="e.g. Bulid me a website  " oninput="this.className = ''"></p>
+                    <h3 class="h3">Tell us more about your project</h3>
+                    <p><input id="box2" placeholder="Describe your project here..." oninput="this.className = ''"></p>
+                </div>
+
+                <div class="tab">
+                    <h3 class="h3">What skills are required?</h3>
+                    <h5 class="h5">Enter up to 5 skills that best describe your project. Freelancers will use these
+                        skills to find projects they are most interested and experienced in.</h5>
+                    <p><input id="box3" placeholder="Enter Skills here" oninput="this.className = ''"></p>
+                    <h6 class="h6">Suggested skills:<span class="sugg-skill">Website Design, Logo Design, Mobile App
+                            Development, Data Entry,Article Writing</span> </h6>
+                </div>
+
+
+                <div class="tab">
+                    <h3 class="h3"> How Many Days To Finish The Project ?</h3>
+                    <p><input id="box4" placeholder="Enter How Many Days you need." oninput="this.className = ''"></p>
+                </div>
+                <div class="tab">
+                    <h3 class="h3">How do you want to pay?</h3>
+
+                </div>
+
+                <div style="overflow:auto;">
+                    <div style="float:right;" class="nxt-pre">
+                        <button class="prevBtn" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button class="nextBtn" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                </div>
+
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

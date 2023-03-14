@@ -1,0 +1,265 @@
+/* color:  red#ec1c24, black#212d31, grey#343a40, white#eee  */
+
+  .mar0{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .body{
+    color: #212d31;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    border: 0;
+
+  }
+  
+  .contain {
+    background-color: #eee;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  div.form {
+    background-color: #eee;
+  }
+  .contact-wrapper {
+    margin: auto 0;
+  }
+  
+  .submit-btn {
+    float: left;
+  }
+  .reset-btn {
+    float: right;
+  }
+  
+  .form-headline:after {
+    content: "";
+    display: block;
+    width: 10%;
+    padding-top: 10px;
+    border-bottom: 3px solid #ec1c24;
+  }
+  
+  .highlight-text {
+    color: #ec1c24;
+  }
+  
+  .hightlight-contact-info {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  
+  .highlight-text-grey {
+    font-weight: 500;
+  }
+  
+  .email-info {
+      margin-top: 20px;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .required-input {
+    color: black;
+  }
+  @media (min-width: 600px) {
+    .contain {
+      padding: 0;
+    }
+  }
+  
+  h3,
+  ul {
+    margin: 0;
+  }
+  
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-input:focus,
+  textarea:focus{
+    outline: 1.5px solid #ec1c24;
+  }
+  
+  .form-input,
+  textarea {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+  }
+  
+  .wrapper > * {
+    padding: 1em;
+    margin-top: 20px;
+  }
+  @media (min-width: 700px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .wrapper > * {
+      padding: 2em 2em;
+    }
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contacts {
+    color: #212d31;
+    margin-top:auto;
+  }
+  
+  .form {
+    background: #fff;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  form label {
+    display: block;
+  }
+  form p {
+    margin: 0;
+  }
+  
+  .full-width {
+    grid-column: 1 / 3;
+  }
+  
+  button,
+  .submit-btn,
+  .form-input,
+  textarea {
+    padding: 1em;
+  }
+  
+  button, .submit-btn {
+    background: transparent;
+    border: 1px solid #ec1c24;
+    color: #ec1c24;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+  }
+  button:hover, .submit-btn:hover,
+  button:focus , .submit-btn:focus{
+    background: #ec1c24;
+    outline: 0;
+    color: #eee;
+  }
+  .error {
+    color: #ec1c24;
+  }
+  .head{
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .head-nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-right: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .nav-bar1 ul { 
+    flex-direction: row;
+    display: flex;
+    margin: 0px;
+    /* padding: 10px; */
+    padding-left: 150px;
+}
+    
+   
+    .nav-bar1 li {
+      display: inline-block;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .nav-bar1 li a{
+    text-decoration: none;
+    font-size: 13px;
+    color:rgb(14,23,36);
+  }
+  .nav-bar1 li a:hover{
+    text-decoration: none;
+    color: rgb(92, 216, 247);
+    transition: 0.5s ease;
+  }
+  .nav-bar2 ul {
+    margin-left: 0px;
+ 
+}
+  .nav-bar2 li {
+    display: inline-block;
+    padding: 10px;
+    
+  }
+  .nav-bar2 li a{
+    text-decoration: none;
+    font-size: 13px;
+    color:rgb(14,23,36);
+  }
+  .nav-bar2 li a:hover{
+    text-decoration: none;
+    color: rgb(92, 216, 247);
+    transition: 0.5s ease;
+  }
+  .nav{
+    display: flex;
+    text-decoration: none;
+    color:white;
+    background-color:rgb(14,23,36);
+    height: 50px;
+    text-align: center;
+
+    
+    
+  }
+  .nav li{
+    display: inline-block;
+    padding-right: 5px;
+    text-align: center;
+    /* margin-top: 19px; */
+   
+    
+  }
+
+  /* start nevbar for web  */
+  .nav ul{
+    padding-left:80px;
+  }
+  .nav li a{
+    color:white;
+    text-decoration: none;
+    font-size :13px;
+    padding-right: 70px;
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    line-height: 48px;
+    min-height: 48px;
+    padding: 0 8px;
+  }
+    .nav li a:hover{
+  background-color: rgb(211, 213, 214);
+  display: block;
+  transition: 0.5s ease;
+  }  

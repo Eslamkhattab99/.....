@@ -1,0 +1,663 @@
+* {
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  }
+  :root {
+    --Moderate-blue: hsl(238, 40%, 52%);
+    --Soft-Red: hsl(358, 79%, 66%);
+    --Light-grayish-blue: hsl(239, 57%, 85%);
+    --Pale-red: hsl(357, 100%, 86%);
+  
+    --Dark-blue: hsl(212, 24%, 26%);
+    --Grayish-Blue: hsl(211, 10%, 45%);
+    --Light-gray: hsl(223, 19%, 93%);
+    --Very-light-gray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+  }
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: rgb(240,240,240);
+  }
+  
+  nav {
+    background: rgb(255, 255, 255);
+    padding: 0 10px;
+    display: flex;
+    justify-content:space-between;
+    list-style:none;
+    box-shadow: 1px 1px 1px 1px rgb(198, 198, 199);
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+   
+    
+    
+  }
+  
+  .nav-bar1 ul { 
+     margin: 0px;
+    padding: 10px;
+    padding-left: 150px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    
+    }
+    .nav-bar1 li {
+      display: inline-block;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .nav-bar1 li a{
+    text-decoration: none;
+    font-size: 13px;
+    color:rgb(14,23,36);
+  }
+  .nav-bar1 li a:hover{
+    text-decoration: none;
+    color: rgb(92, 216, 247);
+    transition: 0.5s ease;
+  }
+  .nav-bar2{
+   
+  }
+  
+  .nav{
+    margin-top:60px;
+    padding-bottom: 5px;
+    display: flex;
+    text-decoration: none;
+    color:white;
+    background-color:rgb(14,23,36);
+    height: 50px;
+    text-align: center;
+    
+    
+  }
+  .nav li{
+    display: inline-block;
+    padding-right: 5px;
+    text-align: center;
+    /* margin-top: 19px; */
+   
+    
+  }
+
+  /* start nevbar for web  */
+  .nav ul{
+    padding-left:80px;
+  }
+  .nav li a{
+    color:white;
+    text-decoration: none;
+    font-size :13px;
+    padding-right: 70px;
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    line-height: 48px;
+    min-height: 48px;
+    padding: 0 8px;
+  }
+    .nav li a:hover{
+  background-color: rgb(211, 213, 214);
+  display: block;
+  transition: 0.5s ease;
+  }
+  
+.dropdown {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+button{
+  border:none;
+  border-radius:5px;
+  font-size:18px;
+  cursor:pointer;
+  width: 70px;
+  height: 40px;
+  margin-right: 20px;
+}
+.profile_imgg{
+  width:48px;
+  height: 48px;
+  border-radius: 25px;
+  margin-right: 15px;
+
+
+}
+
+button:hover{
+  background-color:#ddd;
+}
+
+.dropdown-options {
+  display: none;
+  margin-top: 232px;
+  position: absolute;
+  overflow: auto;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+  .title {
+    /* background-color: aqua; */
+    
+    display: flex;
+    background-color: white;
+    max-width: 85%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    justify-content:first baseline;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+
+  .title-a{
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 20px;
+    font-size: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    font-family: unset;
+    height: 100%;
+    align-items: center;
+    font-size: 12px;
+
+  }
+
+
+  .budget{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 10px;
+    width: 40%;
+    display: flex;
+    align-items: inherit;
+    justify-content: space-evenly;
+    height: 100px;
+  }
+  .budget h1{
+    font-size:25px;
+  }
+  .main-contaner{
+    /* display: flex; */
+    background-color: white;
+    max-width: 85%;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    padding: 35px;
+    border-radius: 15px;
+  }
+  .main-contaner h1{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .main-contaner h3{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 100;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+  }
+  .nav-list{
+    display: flex;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .nav-list li {
+    float: left;
+  }
+  
+  .nav-list li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: 600;
+  }
+  .nav-list li a:hover {
+    text-decoration:underline;
+  }
+  .skills-req{
+    display: flex;
+   
+  }
+  .skills-req h2{
+    font-size:20px;
+  }
+  .skills-req ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .skills-req li {
+    float: left;
+  }
+  
+  .skills-req li a {
+    display: block; 
+    color: rgb(49, 82, 172);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: math;
+    font-weight: 500;
+  }
+  .skills-req li a:hover {
+    text-decoration:underline;
+  }
+  .About-the-Client{
+
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    filter: saturate(80%);
+}
+.bu-primary{
+    background-color: var(--Moderate-blue);
+    color: var(--White);
+    border: none;
+    padding: .75rem 1.5rem;
+    border-radius: 4px;
+}
+.comment-section{
+    padding: 0 1rem;
+}
+.container{
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--White);
+}
+.comments-wrp {
+    display: flex;
+    flex-direction: column;
+}
+.comment-section{
+    max-width: 85%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.comment{
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-areas: 
+        "score user controls"
+        "score comment comment"
+        "score comment comment"
+    ;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.5rem;
+    row-gap: 1rem;
+    color: var(--Grayish-Blue);
+}
+
+.c-score{
+    color: var(--Moderate-blue);
+    font-weight: 500;
+    grid-area: score;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .75rem;
+    padding-top: .5rem;
+    width: 1rem;
+    box-sizing: content-box;
+    background-color: var(--Very-light-gray);
+    border-radius: 8px;
+    align-self: flex-start;
+}
+.score-control{
+    width: 100%;
+    cursor: pointer;
+    object-fit: scale-down;
+}
+.c-text{
+    grid-area: comment;
+    width: 100%;
+}
+.c-user{
+    width: 100%;
+    grid-area: user;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.c-userr {
+       /* display: flex; */
+       width: 100%;
+       /* grid-area: user; */
+       display: flex;
+       gap: 1rem;
+       align-items: center;
+       margin-top: 25px;
+       align-items: flex-start;
+}
+
+.usr-name{
+    color: black;
+    font-weight: 700;
+    font-size: unset;
+
+}
+.usr-img{
+    height: 2rem;
+    width: 2rem;
+}
+.usrr-imgg{
+    height: 80px;
+    width: 90px;
+    border-radius: 15px;
+}
+.usr-imgg{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+
+}
+.usr-imgg:hover{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    transform:scale(1.1);
+    transition: 0.35 ease;
+
+}
+.egy{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items:center;
+}
+
+.c-controls{
+    display: flex;
+    gap: 1rem;
+    color: var(--Moderate-blue);
+    grid-area: controls;
+    align-self: center;
+    justify-self: flex-end;
+}
+.c-controls a{
+    align-items: center;
+    display: flex;
+}
+.edit , .reply{
+    color: var(--Moderate-blue);
+}
+.edit{
+    display: none;
+}
+.delete{
+    color: var(--Soft-Red);
+    display: none;
+}
+.control-icon{
+    margin-right: 0.5rem;
+    max-width: 15px;
+
+}
+
+.replies{
+    display: flex;
+    margin-left: 2.5rem;
+    padding-left: 2.4rem;
+    border-left: 1px solid var(--Light-grayish-blue);
+}
+
+.reply-to{
+    color: var(--Moderate-blue);
+    font-weight: 500;
+}
+
+.reply-input{
+    display: grid;
+    margin-bottom: 1rem;
+    grid-template-areas: "avatar input button";
+    grid-template-columns: min-content auto min-content;
+    justify-items: center;
+    gap: 1rem;
+    min-height: 9rem;
+}
+.reply-input img{
+    grid-area: avatar;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.reply-input button{
+    grid-area: button;
+    align-self: flex-start;
+}
+.reply-input textarea{
+    grid-area: input;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--Light-gray);
+    border-radius: 4px;
+    resize: none;
+}
+
+.this-user .usr-name::after{
+    font-weight: 400;
+    content: "you";
+    color: var(--White);
+    background-color: var(--Moderate-blue);
+    padding: 0 .4rem;
+    padding-bottom: .2rem;
+    font-size: .8rem;
+    margin-left: .5rem;
+    border-radius: 2px;
+}
+
+.this-user .reply{
+    display: none;
+}
+.this-user .edit , .this-user .delete{
+    display: flex;
+}
+
+@media screen and (max-width:640px) {
+    .container{
+        padding: .75rem;
+    }
+    .replies{
+        padding-left: 1rem;
+        margin-left: .5rem;
+    }
+    .comment{
+        grid-template-areas: 
+            "user user user"
+            "comment comment comment"
+            "score ... controls"
+        ;
+
+        gap: .5rem;
+    }
+    .c-score{
+        flex-direction: row;
+        width: auto;
+    }
+    .reply-input{
+        grid-template-areas: 
+            "input input input"
+            "avatar ... button"
+        ;
+        grid-template-rows: auto min-content;
+        align-items: center;
+        gap: .5rem;
+    }
+    .reply-input img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .reply-input textarea{
+        height: 6rem;
+        padding: .5rem;
+        align-self: stretch;
+    }
+}
+
+
+.modal-wrp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0,0,0,.3); */
+}
+
+.modal{
+    padding: 1.5rem;
+    max-width: 32ch;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "heading heading"
+        "body body"
+        "no yes";
+    background-color: cornflowerblue;
+}
+
+.invisible{
+    display: none;
+}
+
+.modal h3{
+    grid-area: heading;
+    color: var(--Dark-blue);
+}
+.modal button{
+    color: var(--White);
+    padding: .75rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+}
+.modal p{
+    grid-area: body;
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+.modal .yes{
+    grid-area: yes;
+    background-color: var(--Soft-Red);
+}
+.modal .no{
+    background-color: var(--Grayish-Blue);
+    grid-area: no;
+}
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 00px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+  margin-top:15px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
